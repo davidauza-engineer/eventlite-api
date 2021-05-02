@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_03_211136) do
+ActiveRecord::Schema.define(version: 2021_05_02_213940) do
 
   create_table "events", force: :cascade do |t|
     t.string "title"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_04_03_211136) do
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
-    t.boolean "allow_password_change", default: false
+    t.boolean "allow_password_change", default: true
     t.datetime "remember_created_at"
     t.string "confirmation_token"
     t.datetime "confirmed_at"
